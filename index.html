@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="KavaBoyz — Ingredients, how to make kava, and payment info." />
+  <title>KavaBoyz — Product Info</title>
+  <style>
+    :root {
+      --bg: #0b0b0c;
+      --card: #141416;
+      --text: #f2f2f3;
+      --muted: #b6b6bc;
+      --accent: #ffffff;
+      --border: rgba(255,255,255,.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #0b0b0c 0%, #0f1012 100%);
+      color: var(--text);
+    }
+    a { color: inherit; }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 18px 54px;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 0 24px;
+    }
+    header img {
+      width: min(520px, 92vw);
+      height: auto;
+      display: block;
+      border-radius: 18px;
+      background: #ffffff;
+      padding: 10px;
+    }
+    .tagline {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 720px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    .card {
+      background: rgba(20,20,22,.78);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      backdrop-filter: blur(10px);
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      letter-spacing: .2px;
+    }
+    p, li {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    ul, ol {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      font-size: 13px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      color: var(--text);
+    }
+    .footer {
+      margin-top: 16px;
+      text-align: center;
+      color: rgba(255,255,255,.55);
+      font-size: 12px;
+    }
+    .notice {
+      margin-top: 10px;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px dashed rgba(255,255,255,.18);
+      color: rgba(255,255,255,.68);
+      font-size: 12.5px;
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="logo.png" alt="KavaBoyz logo" />
+      <p class="tagline">Scan-ready product page for ingredients, preparation, and payment.</p>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Ingredients</h2>
+        <p><strong>Pure Powdered Kava</strong></p>
+      </section>
+
+      <section class="card">
+        <h2>Traditional Method (How to Make)</h2>
+        <ol>
+          <li>Add <strong>1–2 spoons</strong> of kava powder into a strainer bag.</li>
+          <li>Place the bag in a bowl with <strong>2–3 cups</strong> warm water.</li>
+          <li>Knead and squeeze for <strong>5–10 minutes</strong>.</li>
+          <li>Serve and enjoy.</li>
+        </ol>
+      </section>
+
+      <section class="card" style="grid-column: 1 / -1;">
+        <h2>Order & Payment</h2>
+        <p>Zelle only to:</p>
+        <p class="mono" style="margin-top:8px; font-size:16px;">kavaboyz03@gmail.com</p>
+
+        <div class="actions">
+          <a class="pill" href="mailto:kavaboyz03@gmail.com?subject=KavaBoyz%20Order%20Inquiry">Email KavaBoyz</a>
+          <a class="pill" href="#copy" onclick="navigator.clipboard.writeText('kavaboyz03@gmail.com'); return false;">Copy Zelle Email</a>
+        </div>
+
+        <div class="notice">
+          <strong>Note:</strong> Write your name + quantity in the Zelle memo. If you have questions, tap “Email KavaBoyz.”<br/>
+          <span style="opacity:.8;">(You can customize this note anytime.)</span>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer">© 2026 KavaBoyz LLC</div>
+  </div>
+</body>
+</html>
