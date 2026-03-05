@@ -1,185 +1,183 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="KavaBoyz — Ingredients, website, and payment info." />
-<title>KavaBoyz — Product Info</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="KavaBoyz — Ingredients, website, and payment info." />
+  <title>KavaBoyz — Product Info</title>
 
-<style>
-:root {
---bg:#0b0b0c;
---card:#141416;
---text:#f2f2f3;
---muted:#b6b6bc;
---accent:#ffffff;
---border:rgba(255,255,255,.12);
-}
+  <style>
+    :root{
+      --bg:#0b0b0c;
+      --bg2:#0f1012;
+      --card: rgba(20,20,22,.78);
+      --text:#f2f2f3;
+      --muted:#b6b6bc;
+      --border: rgba(255,255,255,.12);
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      color: var(--text);
+    }
+    a{ color: inherit; }
 
-*{box-sizing:border-box;}
+    .wrap{
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 18px 54px;
+    }
 
-body{
-margin:0;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-background:linear-gradient(180deg,#0b0b0c 0%,#0f1012 100%);
-color:var(--text);
-}
+    header{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:14px;
+      padding:10px 0 24px;
+    }
 
-.wrap{
-max-width:860px;
-margin:0 auto;
-padding:28px 18px 54px;
-}
+    /* Logo "card" */
+    .logo-card{
+      background:#fff;
+      border-radius:18px;
+      padding:10px;
+      width:min(520px, 92vw);
+    }
+    .logo-card img{
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:14px;
+    }
 
-header{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:14px;
-padding:10px 0 24px;
-}
+    .tagline{
+      text-align:center;
+      color: var(--muted);
+      font-size:14px;
+      line-height:1.4;
+      margin:0;
+    }
 
-header img{
-width:min(520px,92vw);
-height:auto;
-display:block;
-border-radius:18px;
-background:#ffffff;
-padding:10px;
-}
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+    }
+    @media (min-width:720px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
 
-.tagline{
-text-align:center;
-color:var(--muted);
-font-size:14px;
-line-height:1.4;
-margin:0;
-}
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      backdrop-filter: blur(10px);
+    }
 
-.grid{
-display:grid;
-grid-template-columns:1fr;
-gap:14px;
-}
+    h2{
+      margin:0 0 10px;
+      font-size:16px;
+      letter-spacing:.2px;
+    }
 
-@media (min-width:720px){
-.grid{grid-template-columns:1fr 1fr;}
-}
+    p, li{
+      margin:0;
+      color: var(--muted);
+      font-size:14px;
+      line-height:1.55;
+    }
 
-.card{
-background:rgba(20,20,22,.78);
-border:1px solid var(--border);
-border-radius:18px;
-padding:18px;
-backdrop-filter:blur(10px);
-}
+    .actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:12px;
+    }
 
-h2{
-margin:0 0 10px;
-font-size:16px;
-letter-spacing:.2px;
-}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      font-size:13px;
+      text-decoration:none;
+      white-space:nowrap;
+      cursor:pointer;
+    }
 
-p,li{
-margin:0;
-color:var(--muted);
-font-size:14px;
-line-height:1.55;
-}
+    .mono{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      color: var(--text);
+    }
 
-.pill{
-display:inline-flex;
-align-items:center;
-gap:8px;
-padding:10px 12px;
-border-radius:999px;
-border:1px solid var(--border);
-background:rgba(255,255,255,.06);
-color:var(--text);
-font-size:13px;
-text-decoration:none;
-white-space:nowrap;
-}
-
-.actions{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-margin-top:12px;
-}
-
-.mono{
-font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-color:var(--text);
-}
-
-.footer{
-margin-top:16px;
-text-align:center;
-color:rgba(255,255,255,.55);
-font-size:12px;
-}
-</style>
+    .footer{
+      margin-top:16px;
+      text-align:center;
+      color: rgba(255,255,255,.55);
+      font-size:12px;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="wrap">
 
-<div class="wrap">
+    <header>
+      <div class="logo-card">
+        <img src="logo_tm.png" alt="KavaBoyz™ logo" />
+      </div>
 
-<header>
-<img src="logo.png" alt="KavaBoyz logo" />
-<p class="tagline">Scan-ready product page for ingredients, website, and payment.</p>
-</header>
+      <p class="tagline">
+        Scan-ready product page for ingredients, website, and payment.
+      </p>
+    </header>
 
-<div class="grid">
+    <div class="grid">
 
-<section class="card">
-<h2>Ingredients</h2>
-<p><strong>Pure Powdered Kava (Piper methysticum) *Hand Cleaned*</strong></p>
-</section>
+      <section class="card">
+        <h2>Ingredients</h2>
+        <p><strong>Pure Powdered Kava (Piper methysticum) *Hand Cleaned*</strong></p>
+      </section>
 
-<section class="card">
-<h2>Website</h2>
-<p>Visit our official website:</p>
+      <section class="card">
+        <h2>Website</h2>
+        <p>Visit our official website:</p>
 
-<div class="actions">
-<a class="pill" href="https://www.kavaboyz.us" target="_blank">
-www.kavaboyz.us
-</a>
-</div>
-</section>
+        <div class="actions">
+          <a class="pill" href="https://www.kavaboyz.us" target="_blank" rel="noopener">
+            www.kavaboyz.us
+          </a>
+        </div>
+      </section>
 
-<section class="card" style="grid-column:1/-1;">
+      <section class="card" style="grid-column: 1 / -1;">
+        <h2>Payment</h2>
+        <p>Zelle only to:</p>
+        <p class="mono" style="margin-top:8px; font-size:16px;">kavaboyz03@gmail.com</p>
 
-<h2>Payment</h2>
-<p>Zelle only to:</p>
+        <div class="actions">
+          <a class="pill" href="mailto:kavaboyz03@gmail.com?subject=KavaBoyz%20Order%20Inquiry">
+            Email KavaBoyz
+          </a>
 
-<p class="mono" style="margin-top:8px;font-size:16px;">
-kavaboyz03@gmail.com
-</p>
+          <a class="pill" href="#copy"
+             onclick="navigator.clipboard.writeText('kavaboyz03@gmail.com'); return false;">
+            Copy Zelle Email
+          </a>
+        </div>
+      </section>
 
-<div class="actions">
+    </div>
 
-<a class="pill" href="mailto:kavaboyz03@gmail.com?subject=KavaBoyz%20Order%20Inquiry">
-Email KavaBoyz
-</a>
+    <div class="footer">© 2026 KavaBoyz LLC</div>
 
-<a class="pill" href="#copy"
-onclick="navigator.clipboard.writeText('kavaboyz03@gmail.com');return false;">
-Copy Zelle Email
-</a>
-
-</div>
-
-</section>
-
-</div>
-
-<div class="footer">
-© 2026 KavaBoyz LLC
-</div>
-
-</div>
-
+  </div>
 </body>
 </html>
