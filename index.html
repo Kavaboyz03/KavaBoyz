@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="description" content="KavaBoyz — Ingredients, website, and payment info."/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="KavaBoyz — Ingredients, website, and payment info." />
 <title>KavaBoyz — Product Info</title>
 
 <style>
-:root{
+:root {
 --bg:#0b0b0c;
 --card:#141416;
 --text:#f2f2f3;
 --muted:#b6b6bc;
+--accent:#ffffff;
 --border:rgba(255,255,255,.12);
 }
 
@@ -34,7 +35,7 @@ header{
 display:flex;
 flex-direction:column;
 align-items:center;
-gap:10px;
+gap:14px;
 padding:10px 0 24px;
 }
 
@@ -47,16 +48,12 @@ background:#ffffff;
 padding:10px;
 }
 
-.brand{
-font-size:22px;
-font-weight:600;
-letter-spacing:.3px;
-}
-
 .tagline{
 text-align:center;
 color:var(--muted);
 font-size:14px;
+line-height:1.4;
+margin:0;
 }
 
 .grid{
@@ -74,11 +71,13 @@ background:rgba(20,20,22,.78);
 border:1px solid var(--border);
 border-radius:18px;
 padding:18px;
+backdrop-filter:blur(10px);
 }
 
 h2{
 margin:0 0 10px;
 font-size:16px;
+letter-spacing:.2px;
 }
 
 p,li{
@@ -91,12 +90,15 @@ line-height:1.55;
 .pill{
 display:inline-flex;
 align-items:center;
-padding:10px 14px;
+gap:8px;
+padding:10px 12px;
 border-radius:999px;
 border:1px solid var(--border);
 background:rgba(255,255,255,.06);
-text-decoration:none;
+color:var(--text);
 font-size:13px;
+text-decoration:none;
+white-space:nowrap;
 }
 
 .actions{
@@ -107,12 +109,12 @@ margin-top:12px;
 }
 
 .mono{
-font-family:ui-monospace,Menlo,Monaco,monospace;
+font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 color:var(--text);
 }
 
 .footer{
-margin-top:20px;
+margin-top:16px;
 text-align:center;
 color:rgba(255,255,255,.55);
 font-size:12px;
@@ -125,17 +127,8 @@ font-size:12px;
 <div class="wrap">
 
 <header>
-
-<img src="logo.png" alt="KavaBoyz logo"/>
-
-<div class="brand">
-KavaBoyz<sup>™</sup>
-</div>
-
-<p class="tagline">
-Scan-ready product page for ingredients, website, and payment.
-</p>
-
+<img src="logo.png" alt="KavaBoyz logo" />
+<p class="tagline">Scan-ready product page for ingredients, website, and payment.</p>
 </header>
 
 <div class="grid">
@@ -159,7 +152,6 @@ www.kavaboyz.us
 <section class="card" style="grid-column:1/-1;">
 
 <h2>Payment</h2>
-
 <p>Zelle only to:</p>
 
 <p class="mono" style="margin-top:8px;font-size:16px;">
