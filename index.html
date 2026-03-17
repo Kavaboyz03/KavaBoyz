@@ -3,181 +3,149 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="KavaBoyz — KavaBoyz isn’t just a product — it’s a vibe!" />
-  <title>KavaBoyz — Product Info</title>
+  <title>KavaBoyz - WAKA</title>
 
   <style>
-    :root{
-      --bg:#0b0b0c;
-      --bg2:#0f1012;
-      --card: rgba(20,20,22,.78);
-      --text:#f2f2f3;
-      --muted:#b6b6bc;
-      --border: rgba(255,255,255,.12);
-    }
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-      background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
-      color: var(--text);
-    }
-    a{ color: inherit; }
-
-    .wrap{
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 28px 18px 54px;
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
     }
 
-    header{
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      gap:14px;
-      padding:10px 0 24px;
+    .container {
+      max-width: 500px;
+      margin: auto;
     }
 
-    /* Logo "card" */
-    .logo-card{
-      background:#fff;
-      border-radius:18px;
-      padding:10px;
-      width:min(520px, 92vw);
-    }
-    .logo-card img{
-      width:100%;
-      height:auto;
-      display:block;
-      border-radius:14px;
+    h1 {
+      color: gold;
+      margin-bottom: 5px;
     }
 
-    .tagline{
-      text-align:center;
-      color: var(--muted);
-      font-size:14px;
-      line-height:1.4;
-      margin:0;
+    h2 {
+      margin-top: 30px;
+      color: #f5c542;
     }
 
-    .grid{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap:14px;
-    }
-    @media (min-width:720px){
-      .grid{ grid-template-columns: 1fr 1fr; }
+    p {
+      line-height: 1.6;
     }
 
-    .card{
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius:18px;
-      padding:18px;
-      backdrop-filter: blur(10px);
+    a {
+      color: #4da6ff;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    h2{
-      margin:0 0 10px;
-      font-size:16px;
-      letter-spacing:.2px;
+    a:hover {
+      text-decoration: underline;
     }
 
-    p, li{
-      margin:0;
-      color: var(--muted);
-      font-size:14px;
-      line-height:1.55;
+    .box {
+      background: #1c1c1c;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 10px;
     }
 
-    .actions{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-top:12px;
+    button {
+      background: gold;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
     }
 
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:10px 12px;
-      border-radius:999px;
-      border:1px solid var(--border);
-      background: rgba(255,255,255,.06);
-      color: var(--text);
-      font-size:13px;
-      text-decoration:none;
-      white-space:nowrap;
-      cursor:pointer;
-    }
-
-    .mono{
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      color: var(--text);
-    }
-
-    .footer{
-      margin-top:16px;
-      text-align:center;
-      color: rgba(255,255,255,.55);
-      font-size:12px;
+    button:hover {
+      background: #e6b800;
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
+  <div class="container">
 
-    <header>
-      <div class="logo-card">
-        <img src="logo_tm.png" alt="KavaBoyz™ logo" />
-      </div>
+    <h1>KavaBoyz™</h1>
+    <p>Premium Noble Kava (WAKA)</p>
 
-      <p class="tagline">
-KavaBoyz isn’t just a product — it’s a vibe!       
-      </p>
-    </header>
-
-    <div class="grid">
-
-      <section class="card">
-        <h2>Ingredients</h2>
-        <p><strong>Pure Powdered Kava (Piper methysticum) *Hand Cleaned*</strong></p>
-      </section>
-
-      <section class="card">
-        <h2>Website</h2>
-        <p>Visit our official website:</p>
-
-        <div class="actions">
-          <a class="pill" href="https://www.kavaboyz.us" target="_blank" rel="noopener">
-            www.kavaboyz.us
-          </a>
-        </div>
-      </section>
-
-      <section class="card" style="grid-column: 1 / -1;">
-        <h2>Payment</h2>
-        <p>Zelle only to:</p>
-        <p class="mono" style="margin-top:8px; font-size:16px;">kavaboyz03@gmail.com</p>
-
-        <div class="actions">
-          <a class="pill" href="mailto:kavaboyz03@gmail.com?subject=KavaBoyz%20Order%20Inquiry">
-            Email KavaBoyz
-          </a>
-
-          <a class="pill" href="#copy"
-             onclick="navigator.clipboard.writeText('kavaboyz03@gmail.com'); return false;">
-            Copy Zelle Email
-          </a>
-        </div>
-      </section>
-
+    <!-- Ingredients -->
+    <div class="box">
+      <h2>Ingredients</h2>
+      <p>Pure Powdered Kava (Piper methysticum)<br>*Hand Cleaned*</p>
     </div>
 
-    <div class="footer">© 2026 KavaBoyz LLC</div>
+    <!-- Brewing Instructions -->
+    <div class="box">
+      <h2>Brewing Instructions</h2>
+      <p>
+        <a href="https://www.kavaboyz.us/#contact" target="_blank">
+          Click here for Brewing Instructions
+        </a>
+      </p>
+    </div>
+
+    <!-- Batch Info -->
+    <div class="box">
+      <h2>Batch Information</h2>
+      <p>
+        Origin: Fiji<br>
+        Type: Noble Kava (Waka)<br>
+        Re-Packaged in USA
+      </p>
+    </div>
+
+    <!-- About -->
+    <div class="box">
+      <h2>About KavaBoyz</h2>
+      <p>
+        <a href="https://www.kavaboyz.us/#story" target="_blank">
+          Learn more about KavaBoyz
+        </a>
+      </p>
+    </div>
+
+    <!-- Connect -->
+    <div class="box">
+      <h2>Connect With Us</h2>
+      <p>
+        <a href="https://www.kavaboyz.us/#contact" target="_blank">
+          Contact Us
+        </a>
+      </p>
+    </div>
+
+    <!-- Payment -->
+    <div class="box">
+      <h2>Payment</h2>
+      <p>Zelle only to:</p>
+      <p><strong id="zelleEmail">kavaboyz03@gmail.com</strong></p>
+      <button onclick="copyEmail()">Copy Zelle Email</button>
+    </div>
+
+    <!-- Website -->
+    <div class="box">
+      <h2>Official Website</h2>
+      <p>
+        <a href="https://www.kavaboyz.us" target="_blank">
+          Visit KavaBoyz Website
+        </a>
+      </p>
+    </div>
 
   </div>
+
+  <script>
+    function copyEmail() {
+      const email = document.getElementById("zelleEmail").innerText;
+      navigator.clipboard.writeText(email);
+      alert("Zelle email copied!");
+    }
+  </script>
+
 </body>
 </html>
